@@ -54,6 +54,13 @@ section {
 }
 
 
+section  h2{
+	font-size: 3rem;
+	font-weight: 400;
+	color: #707070;
+}
+
+
 h1, h2, h3, h4, h5{
 	font-family: 'Teko Regular', sans-serif;
 	text-transform: uppercase;
@@ -170,6 +177,37 @@ header {
 }
 
 
+/* SEÇÃO NEWSLETTER */
+
+.newsletter {
+	background-color: #F4F4F4;
+}
+
+
+.newsletter h2{
+	color: #44ACCF;
+}
+
+
+/* SEÇÃO COMPRE AGORA */
+
+.compreAgora {
+	background-image: linear-gradient(to right, #44ACD0 , #96BC4F);
+}
+
+
+.compreAgora h2, .compreAgora p {
+	color: white
+}
+
+.compreAgora button {
+	text-transform: uppercase;
+	color: #44ACCF;
+	width: 20%;
+	margin-top: 2%;
+	font-weight: ;
+}
+
 /* FORMULÁRIO */
 
 .form-control option{
@@ -241,42 +279,81 @@ header {
 }
 
 
- /* CAROUSEL HEADER */
+/* CAROUSEL HEADER */
 
- .quadrado{
-	width:100%;
-	height:auto;
-	height: 200px; 
-	width: 200px; 
-	background-color: black; 
+.carousel-header-indicator {
+	bottom: 15%;
+}
+
+.CarouselHeader {
+	padding: 20% 0;
+}
+
+.quadradoHeader {
+	display: block;
+	text-align: center;
+	padding: 26% 0;
+}
+
+.conhecaAgora {
+	display: block;
+	text-align: center;
+	padding: 2% 0;
+}
+
+.quadradoHeader h3, .conhecaAgora a {
+	color: #F4F4F4;
+	text-transform: uppercase;
+}
+
+.quadradoHeader h3 {
+	color: #F4F4F4;
+	font-size: 3rem;
+	text-transform: uppercase ;
+}
+
+.quadradoHeader div {
+	font-weight: 200;
+	margin: -13px 0;
+}
+
+.quadrado {
+	width: 200px;
+	height: 200px;
 	margin: 0 auto;
-  }
-
-  #CarouselHeader {
-	  padding: 20% 0;
-  }
-
-/* CAROUSEL SLIDES */
-
-.col-md-4{
-	display: inline-block;
-	margin-left:-4px;
-  }
-  .col-md-4 img{
-	width:100%;
-	height:auto;
-  }
+	background-image: none;
+	border-style: solid;
+	border-image: linear-gradient(to right,#44ACD0 , #96BC4F);
+	border-image-slice: 1;
+}
 
 
+/* PRODUTOS HEADER */ 
+
+.produtosHeader {
+	margin: 10% 0;
+}
+
+/* SEÇÃO SOBRE NÓS */ 
+
+.sobreNos {
+	margin: 4% 0;
+}
+
+
+/* CAROUSEL PRODUTOS ESTILOS */
 
   body .carousel-indicators li{
 	background-color:red;
   }
+
   body .carousel-control-prev-icon,
   body .carousel-control-next-icon{
 	background-color:red;
   }
-  body .no-padding{
-	padding-left: 0;
-	padding-right: 0;
-  }
+  .carousel-control-next {
+    right: -12%;
+}
+.carousel-control-prev {
+    left: -12%;
+}
