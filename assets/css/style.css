@@ -215,12 +215,11 @@ header {
 }
 .form-control{
 	border-radius: 0;
-	padding: 25px;
     font-size: 18px;
     font-style: italic;
-    background-color: transparent;
+    background-color: white;
     color: #424242;
-    margin-bottom: 30px;
+    margin: 20px 0;
 	border-color: #51c2b9;
 }
 .form-control:focus{
@@ -228,16 +227,20 @@ header {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(81, 194, 185, 0.6);
 }
 .form-control::-webkit-input-placeholder {
-    color: #fff;
+	color: #707070;
+	font-family: Oxygen Regular;
 }
 .form-control:-moz-placeholder { /* Firefox 18- */
-    color: #fff;  
+	color: #707070;
+	font-family: Oxygen Regular;  
 }
 .form-control::-moz-placeholder {  /* Firefox 19+ */
-    color: #fff;  
+	color: #707070;
+	font-family: Oxygen Regular;  
 }
 .form-control:-ms-input-placeholder {  
-    color: #fff;  
+	color: #707070;  
+	font-family: Oxygen Regular;
 }
 
 .element .form-control::-webkit-input-placeholder {
@@ -253,11 +256,19 @@ header {
     color: #424242;  
 }
 
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    color: #44ACCF;
+    text-transform: uppercase;
+}
+
+
+
+
 /* FOOTER */
 
 .footer{
-	background-color: #202020;
-	text-align: center;
+	background-color: #FFFFFF;
+	text-align: left;
 	padding:0;
 }
 
@@ -276,6 +287,31 @@ header {
 }
 .footer a{
 	color: #fff;
+}
+
+.parceiros h5 , .menu-rodape h5 {
+	color: #95BC50;
+	font-family: Oxygen;
+	font-size: 14px;
+	padding: 13px 0;
+}
+
+.footer li {
+	list-style-type: none;
+	font-size: 21px;
+	color: #747474;
+}
+
+.footer ul {
+	padding-inline-start: 0px;
+}
+
+.parceiros h5 {
+	text-align: right;
+}
+
+.menu-rodape h5 {
+	text-align: left;
 }
 
 
