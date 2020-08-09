@@ -370,6 +370,18 @@ header {
 	margin: 10% 0;
 }
 
+@media (max-width: 768px) { 
+	.produtosHeader {
+		display: none;
+	}
+ }
+
+ @media (min-width: 768px) { 
+	.produtosHeaderMobile {
+		display: none;
+	}
+ }
+
 /* SEÇÃO SOBRE NÓS */ 
 
 .sobreNos {
