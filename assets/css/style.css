@@ -87,76 +87,6 @@ a{
 }
 
 
-/* NAV BAR */
-.navbar-ubutia{
-	background-image: none;
-	background-color: #131212ba;
-	margin-bottom: 0;
-	border-radius: 0;
-	border-color: transparent;
-	transition: all 0.3s ease-in-out;
-}
-
-.nav {
-	display: inline-flex;
-}
-
-/* NAVEGAÇÃO */
-
-#menu-item{
-	transition: all 0.3s ease-in-out;
-}
-.menu-item{
-	background-color: #1a1a1a;
-	text-align: center;
-	font-size: 20px;
-	text-transform: uppercase;
-}
-.menu-item ul{
-	padding-left: 0;
-	margin-bottom: 0;
-}
-.menu-item ul a li{
-	padding: 15px 0;
-	list-style-type: none;
-	color: #fff;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-.menu-item ul a:hover li{
-	color: #51c2b9;
-	text-decoration: none;
-}
-.hide-menu{
-	margin-top: -377px;
-}
-.show-menu{
-	margin-top: 0;
-}
-.dark-bar{
-	background-color: #424242;
-	background-image: none;
-}
-
-
-/* ELEMENTOS DA NAVEGAÇÃO */
-
-.element .navigation-bar{
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-.element .navigation-bar a{
-	color: #424242;
-	font-family: 'Teko Regular', sans-serif;
-	font-size: 21px;
-
-}
-
-.navigation-bar a {
-	color: #FFFFFF;
-	font-family: 'Teko Regular', sans-serif;
-	font-size: 21px;
-}
-
-
 /* HEADER */
 
 .header{
@@ -176,6 +106,81 @@ header {
 	padding: 0 20%;
 }
 
+.page-wrap::before {
+	transition: .3s all ease-in-out;
+	content: "";
+	position: absolute;
+	/* z-index: 2000; */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: visible;
+}
+
+
+.off-view .page-wrap::before {
+
+	opacity: 0.5;
+	visibility: visible;
+	
+
+}
+
+/* MOBILE VIEW */
+
+.mobile-view{
+	width: 300px;
+	position: fixed;
+	right: 0;
+	z-index: 2000;
+	padding-top: 20px;
+	background: white;
+	height: calc(100vh);
+	transform: translateX(110%);
+	box-shadow: -10px 0	20px -10px rgba(0, 0, 0, 0.1);
+	transition: .3s all ease-in-out;
+}
+
+
+.off-view .mobile-view {
+	transform: translateX(0%);
+}
+
+.mobile-view .mobile-view-header {
+	width: 100%;
+	float: left;
+	padding-left: 20px;	
+	padding-right: 20px;
+}
+
+
+.mobile-view .mobile-view-header .mobile-view-close{
+	float: right;
+	margin-top: 8px;	
+	margin-right: 10px;
+}
+
+.mobile-view .mobile-view-header .mobile-view-close i{
+	font-size: 30px;
+	display: inline-block;
+	padding-right: 10px;
+	line-height: 1;
+	cursor: pointer;
+	transition: .3s all ease;
+}
+
+.mobile-view .mobile-view-body {
+	overflow: scroll;
+	position: relative;
+	padding: 20px;
+	height: calc(100vh - 52px);
+	padding-bottom: 150px;
+	padding-top: 50px;
+
+
+}
 
 /* SEÇÃO NEWSLETTER */
 

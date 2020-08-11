@@ -331,4 +331,21 @@ jQuery(document).ready(function($){
 });
 
 
+// Mobile View 
+
+jQuery(document).ready(function($) {
+	"use strict";
+
+	// Clonando elementos javascript
+
+	var navclone = function() {
+		$('.js-clone-nav').each(function(){
+			var $this = $(this);
+			$this.clone().attr('class','clone-view').appendTo('.mobile-view-body')
+		})
+	}
+	navclone();
+});
+
+
 
