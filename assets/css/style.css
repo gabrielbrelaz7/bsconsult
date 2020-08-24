@@ -87,6 +87,23 @@ a{
 }
 
 
+/* NAVBAR */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255,255,255);
+    font-weight: 800;
+}
+
+.nav-style {
+	background-color: linear-gradient(to bottom #44ACD0 , #96BC4F) !important;
+	background-color: black;
+	opacity: 50%;
+}
+
+.navbar a {
+	box-shadow: 20px 20px 20px rgb(0,0,0,0) !important;
+}
+
 /* HEADER */
 
 .header{
@@ -94,6 +111,7 @@ a{
 	height: 100vh;
 	position: relative;
 	min-height: 659px;
+	padding: 0;
 }
 
 .bg-img{
@@ -235,6 +253,10 @@ header {
 	font-weight: ;
 }
 
+.compreAgora button {
+	font-weight: 800;
+}
+
 /* FORMULÁRIO */
 
 .form-control option{
@@ -349,7 +371,7 @@ header {
 }
 
 .CarouselHeader {
-	padding: 20% 0;
+	padding: 8% 0;
 }
 
 .quadradoHeader {
@@ -413,6 +435,9 @@ header {
 
 .sobreNos {
 	margin: 4% 0;
+}
+.produtosHeader .offset-sm-1 {
+	margin-left: 14.333333%;
 }
 
 
