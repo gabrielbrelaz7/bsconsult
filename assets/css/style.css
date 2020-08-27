@@ -86,8 +86,18 @@ a{
 	transition: all 0.3s ease-in-out;
 }
 
+.navbar-nav a {
+	font-size: 1.2rem;
+}
+
 
 /* NAVBAR */
+
+/* Logotipo */
+
+.navbar-brand img {
+	width: 70%;
+}
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(255,255,255);
@@ -112,12 +122,15 @@ a{
 	position: relative;
 	min-height: 659px;
 	padding: 0;
+	width: 100%;
+	background-size: contain;
 }
 
 .bg-img{
-	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	width: 100%;
+	background-size: contain;
 }
 
 header {
@@ -367,11 +380,11 @@ header {
 /* CAROUSEL HEADER */
 
 .carousel-header-indicator {
-	bottom: 15%;
+	bottom: 25%;
 }
 
 .CarouselHeader {
-	padding: 8% 0;
+	padding: 4% 0 15%;
 }
 
 .quadradoHeader {
@@ -386,6 +399,10 @@ header {
 	padding: 2% 0;
 }
 
+.conhecaAgora a {
+	font-size: 1.4rem;
+}
+
 .quadradoHeader h3, .conhecaAgora a {
 	color: #F4F4F4;
 	text-transform: uppercase;
@@ -393,7 +410,7 @@ header {
 
 .quadradoHeader h3 {
 	color: #F4F4F4;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	text-transform: uppercase ;
 }
 
@@ -403,8 +420,8 @@ header {
 }
 
 .quadrado {
-	width: 200px;
-	height: 200px;
+	width: 160px;
+	height: 160px;
 	margin: 0 auto;
 	background-image: none;
 	border-style: solid;
@@ -416,7 +433,7 @@ header {
 /* PRODUTOS HEADER */ 
 
 .produtosHeader {
-	margin: 10% 0;
+	margin: 7% 0;
 }
 
 @media (max-width: 768px) { 
@@ -434,7 +451,7 @@ header {
 /* SEÇÃO SOBRE NÓS */ 
 
 .sobreNos {
-	margin: 4% 0;
+	margin: 0 0 2%;
 }
 .produtosHeader .offset-sm-1 {
 	margin-left: 14.333333%;
